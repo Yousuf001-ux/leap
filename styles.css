@@ -104,4 +104,10 @@ button {
     color: white;
     font-size: 1rem;
     font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #4450cf;
 }

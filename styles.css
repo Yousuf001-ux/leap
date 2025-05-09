@@ -8,27 +8,100 @@
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9fafb;
+}
+
+.nav {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.85rem 2rem;
+    background-color: white;
+}
+
+.nav h1 {
+    font-family: "inter", sans-serif;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: #575053;
+}
+
+.nav img {
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+}
+
+.main-content {
+    width: 100%;
+    /* max-width: 1200px; */
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1.5rem;
+}
+
+.main-content .text-content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 0.25rem;
+}
+
+.main-content .text-content h1 {
+    font-size: 3rem;
+    letter-spacing: -3px;
+    color: #415BE7;
+}
+
+.main-content .text-content p {
+    font-size: 1.15rem;
+    color: #575053;
+}
+
+form {
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 0.5rem;
+}
+
+input {
+    width: 100%;
+    padding: 1.05rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #d1d5db;
+    font-size: 0.875rem;
+    color: #575053;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid #415BE7;
 }
 
 button {
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-input, textarea {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    padding: 1.05rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: #415BE7;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
 }

@@ -182,10 +182,16 @@ button:hover {
     row-gap: 0.5rem;
 }
 
-.text h1 {
-    font-size: 2rem;
+.text .result-heading {
+    font-size: 1.75rem;
     letter-spacing: -1px;
     color: #415BE7;
+}
+
+.text .result-heading-notaleap {
+    font-size: 1.75rem;
+    letter-spacing: -1px;
+    color: #e7b241;
 }
 
 .text p {
@@ -258,10 +264,27 @@ button:hover {
 
     .result-overlay {
         width: 100%;
-        height: 100vh;
-        padding-bottom: 0.5rem;
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
+        height: 94vh;
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: start;
+        align-items: end;
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(4px);
+        visibility: hidden;
+    }
+
+    .result-overlay-visible {
+        width: 100%;
+        height: 94vh;
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
         position: fixed;
         top: 0;
         left: 0;
@@ -273,80 +296,54 @@ button:hover {
         visibility: visible;
     }
 
-    .result-overlay-visible {
-        width: 100%;
-        height: 100vh;
-        padding-top: 0.5rem;
-        padding-right: 0.5rem;
-        position: fixed;
-        top: 0;
-        left: 0;
-        display: flex;
-        justify-content: end;
-        align-items: start;
-        background-color: rgba(0, 0, 0, 0.5);
-        backdrop-filter: blur(4px);
-        visibility: visible;
-    }
-
     .result-overlay .result-content {
-        width: 40%;
-        height: auto;
-        background-color: white;
-        padding: 2rem;
-        border-radius: 0.5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        row-gap: 1rem;
-        border-top: 4px solid #415BE7;
+        width: 100%;
+        border-radius: 1rem;
+        row-gap: 2rem;
+        padding: 2rem 1rem 1rem 1rem;
     }
 
     .result-content-notaleap{
-        width: 40%;
+        width: 100%;
         height: auto;
         background-color: white;
         padding: 2rem;
-        border-radius: 0.5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        row-gap: 1rem;
+        border-radius: 1rem;
+        row-gap: 2rem;
         border-top: 4px solid #e7b241;
     }
 
     .text {
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        row-gap: 0.5rem;
+        row-gap: 0.25rem;
     }
 
-    .text h1 {
-        font-size: 2rem;
+    .text .result-heading {
+        font-size: 1.75rem;
         letter-spacing: -1px;
         color: #415BE7;
     }
 
+    .text .result-heading-notaleap {
+        font-size: 1.75rem;
+        letter-spacing: -1px;
+        color: #e7b241;
+    }
+
     .text p {
-        font-size: 1rem;
+        font-size: 1.05rem;
+        letter-spacing: -0.5px;
         color: #575053;
     }
 
     #close-button {
-        padding: 0.35rem 1rem;
-        background-color: #9c9c9c;
-        border-radius: 4px;
+        padding: 1rem;
+        background-color: #f1f0f0;
+        border-radius: 8px;
         cursor: pointer;
+        color: #575053;
     }
 
     #close-button:hover {
-        background-color: #7c7c7c;
+        background-color: #e0dede;
     }
-
 }

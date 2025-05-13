@@ -144,7 +144,7 @@ button:hover {
     visibility: visible;
 }
 
-.result-overlay .result-content {
+.result-content {
     width: 40%;
     height: auto;
     background-color: white;
@@ -201,13 +201,14 @@ button:hover {
 
 #close-button {
     padding: 0.35rem 1rem;
-    background-color: #9c9c9c;
+    background-color: #f1f0f0;
     border-radius: 4px;
     cursor: pointer;
+    color: #575053;
 }
 
 #close-button:hover {
-    background-color: #7c7c7c;
+    background-color: #e0dede;
 }
 
 @media (max-width: 512px) {
@@ -296,7 +297,7 @@ button:hover {
         visibility: visible;
     }
 
-    .result-overlay .result-content {
+    .result-content {
         width: 100%;
         border-radius: 1rem;
         row-gap: 2rem;
